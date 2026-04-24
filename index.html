@@ -1,976 +1,369 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Hero Shekhe Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Shekhe — Painter</title>
+  <meta name="description"
+    content="Hero Shekhe is a Kurdish painter whose work explores womanhood, memory, motherhood, and the struggle for freedom." />
+  <meta name="author" content="Hero Shekhe" />
+  <meta property="og:title" content="Hero Shekhe — Painter" />
+  <meta property="og:description"
+    content="Kurdish painter exploring womanhood, memory, and freedom through painting." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/hero pro.jpg" />
+  <meta name="theme-color" content="#f5f2ec" />
+  <link rel="icon" type="image/png" href="./assets/insta2.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
   <link href="mediaqueries.css" rel="stylesheet" />
 </head>
 
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Hero Shekhe</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Hero Shekhe</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container_top">
-      <img alt="Hero Shekha profile picture" src="./assets/hero pro.jpg" />
-    </div>
-    <div class="section__text">
-      <h1 class="title">Hero Shekhe</h1>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/hero_shekhe_cv.pdf')">
+<body id="top">
+  <header class="site-nav">
+    <a class="brand" href="#top">Hero Shekhe</a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Painter · b.&nbsp;1991, East Kurdistan</p>
+      <h1 class="display">Hero<br /><em>Shekhe</em></h1>
+      <p class="lede">
+        Painting as a quiet insistence — on women, memory, and the weight of being.
+      </p>
+      <div class="hero-actions">
+        <a class="link" href="#work">View the work <span aria-hidden="true">→</span></a>
+        <a class="link link-muted" href="./assets/hero_shekhe_cv.pdf" target="_blank" rel="noopener">
           Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+        </a>
       </div>
-      <img alt="My Instagram profile" class="icon"
-        onclick="location.href='https://www.instagram.com/heroshekhe?igsh=MWp5ejVkNmZ2NHdsNA=="
-        src="./assets/insta2.png" />
-    </div>
+    </section>
 
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img alt="Profile picture" class="about-pic" src="./assets/hero e1.jpg" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img alt="Experience icon" class="icon" src="./assets/experience.png" />
-            <h3>Experience</h3>
-            <p>more than 10 years of <br />experience in art field</p>
-          </div>
-          <div class="details-container">
-            <img alt="Education icon" class="icon" src="./assets/education.png" />
-            <h3>Education</h3>
-            <p>BA Fine Arts in Painting<br />MA Fine Arts in Painting</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            Born in 1991 in East Kurdistan (Iran), Hero Shekhe emerged from a rich cultural tapestry woven with the
-            threads of literature and storytelling. Growing up in a nation with a storied legacy of women's resistance
-            and struggle for freedom and gender equality, Shekhe’s art is deeply reflective of her societal experiences
-            and personal journey.
+    <!-- WORK -->
+    <section id="work" class="work">
+      <header class="section-head">
+        <p class="eyebrow">Collections</p>
+        <h2 class="section-title">Selected Work</h2>
+      </header>
 
-            From a young age, Shekhe displayed a vivid imagination, nurtured by a home filled with books and narratives
-            that shaped her worldview. Her teenage years were marked by a critical awareness of the conditions faced by
-            women in her society. This awareness evolved into a passionate critique, and Shekhe found her voice through
-            painting, a medium she believes is most suited to express her concerns and aspirations in a peaceful yet
-            powerful manner.
-
-            Shekhe’s artworks are a profound exploration of her identity as a woman and her place in the world. Through
-            her art, she delves into the complexities of gender, identity, and societal roles, creating pieces that
-            invite viewers to ponder these themes alongside her. Her paintings are not just expressions of personal
-            introspection but also serve as a platform to question the pervasive violence against women and to raise
-            awareness about their rights.
+      <article class="collection" id="personal-journey">
+        <header class="collection-head">
+          <p class="collection-index">I</p>
+          <h3>Personal Journey</h3>
+          <p class="collection-text">
+            After graduating from the College of Fine Arts, I sought to convey myself more freely. As a young
+            woman dissatisfied with my living conditions and society's attitude towards women, I aimed to express
+            my frustration with the injustices of life and people. Ignoring all academic rules and regulations, I
+            focused solely on expressing what was in my heart.
           </p>
+        </header>
+        <div class="gallery">
+          <figure><img src="./photo/hero_shekhe_01.jpeg" alt="Personal Journey — 1" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_02.jpeg" alt="Personal Journey — 2" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_03.jpeg" alt="Personal Journey — 3" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_04.jpeg" alt="Personal Journey — 4" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_05.jpeg" alt="Personal Journey — 5" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_06.jpeg" alt="Personal Journey — 6" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_07.jpeg" alt="Personal Journey — 7" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_08.jpeg" alt="Personal Journey — 8" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_09.jpeg" alt="Personal Journey — 9" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_10.jpeg" alt="Personal Journey — 10" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_11.jpeg" alt="Personal Journey — 11" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_12.jpeg" alt="Personal Journey — 12" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_13.jpeg" alt="Personal Journey — 13" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_14.jpeg" alt="Personal Journey — 14" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_16.jpeg" alt="Personal Journey — 15" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_17.jpeg" alt="Personal Journey — 16" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_18.jpeg" alt="Personal Journey — 17" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_19.jpeg" alt="Personal Journey — 18" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./photo/hero_shekhe_20.jpeg" alt="Personal Journey — 19" loading="lazy" onclick="openFullSize(this)" /></figure>
+        </div>
+      </article>
+
+      <article class="collection" id="their-struggle">
+        <header class="collection-head">
+          <p class="collection-index">II</p>
+          <h3>Their Struggle</h3>
+          <p class="collection-text">
+            There is a shelter in different cities of the Kurdistan region that protects women threatened by their
+            families. In 2018, I asked the shelter's administration for permission to stay with the women living
+            there. I wanted to learn more about their suffering and collaborate with them on a series of paintings
+            that might help heal some of their wounds. I was not granted permission. A year later, I decided to
+            create the paintings myself — to convey the pain these women carry.
+          </p>
+        </header>
+        <div class="gallery">
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_01.jpeg" alt="Their Struggle — 1" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_02.jpeg" alt="Their Struggle — 2" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_03.jpeg" alt="Their Struggle — 3" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_04.jpeg" alt="Their Struggle — 4" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_05.jpeg" alt="Their Struggle — 5" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_06.jpeg" alt="Their Struggle — 6" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_07.jpeg" alt="Their Struggle — 7" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_08.jpeg" alt="Their Struggle — 8" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_09.jpeg" alt="Their Struggle — 9" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_10.jpeg" alt="Their Struggle — 10" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_11.jpeg" alt="Their Struggle — 11" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_12.jpeg" alt="Their Struggle — 12" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_13.jpeg" alt="Their Struggle — 13" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_14.jpeg" alt="Their Struggle — 14" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_15.jpeg" alt="Their Struggle — 15" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/shelter_in_kurdistan/hero_shekhe_16.jpeg" alt="Their Struggle — 16" loading="lazy" onclick="openFullSize(this)" /></figure>
+        </div>
+      </article>
+
+      <article class="collection" id="my-mothers-hewri">
+        <header class="collection-head">
+          <p class="collection-index">III</p>
+          <h3>My Mother's Hewrî</h3>
+          <p class="collection-text">
+            These paintings explore the feelings and identity of women, particularly Kurdish women. They are named
+            for <em>Hewrî</em>, the traditional dress worn by Kurdish women. The inspiration came from my desire
+            to honor my mother, who has always supported me to be myself. Many of my childhood memories feature
+            her wearing this dress. When it grew worn and she wanted to discard it, I kept it and carried it into
+            my figures — because anything that remains with someone for a long time becomes part of them,
+            carrying a piece of their soul.
+          </p>
+        </header>
+        <div class="gallery">
+          <figure><img src="./assets/hawry/hero_shekhe_01.jpeg" alt="My Mother's Hewrî — 1" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_02.jpeg" alt="My Mother's Hewrî — 2" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_03.jpeg" alt="My Mother's Hewrî — 3" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_04.jpeg" alt="My Mother's Hewrî — 4" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_05.jpeg" alt="My Mother's Hewrî — 5" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_06.jpeg" alt="My Mother's Hewrî — 6" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_07.jpeg" alt="My Mother's Hewrî — 7" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/hawry/hero_shekhe_08.jpeg" alt="My Mother's Hewrî — 8" loading="lazy" onclick="openFullSize(this)" /></figure>
+        </div>
+      </article>
+
+      <article class="collection" id="portraits-of-existence">
+        <header class="collection-head">
+          <p class="collection-index">IV</p>
+          <h3>Portraits of Existence</h3>
+          <p class="collection-text">
+            These works depict personal experience. At this stage, I am examining my identity — I think of them as
+            existential, emphasizing self-analysis within a complex and often inscrutable worldview. The recurring
+            themes are fear, anxiety, alienation, inheritance, the meaninglessness of life, the emptiness within
+            human existence, and the individual's position in the world.
+          </p>
+        </header>
+        <div class="gallery">
+          <figure><img src="./assets/feelings/hero_shekhe_01.jpeg" alt="Portraits of Existence — 1" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_02.jpeg" alt="Portraits of Existence — 2" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_03.jpeg" alt="Portraits of Existence — 3" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_04.jpeg" alt="Portraits of Existence — 4" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_05.jpeg" alt="Portraits of Existence — 5" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_06.jpeg" alt="Portraits of Existence — 6" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_07.jpeg" alt="Portraits of Existence — 7" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_08.jpeg" alt="Portraits of Existence — 8" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_09.jpeg" alt="Portraits of Existence — 9" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_10.jpeg" alt="Portraits of Existence — 10" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_11.jpeg" alt="Portraits of Existence — 11" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_12.jpeg" alt="Portraits of Existence — 12" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_13.jpeg" alt="Portraits of Existence — 13" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_14.jpeg" alt="Portraits of Existence — 14" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_15.jpeg" alt="Portraits of Existence — 15" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_16.jpeg" alt="Portraits of Existence — 16" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_17.jpeg" alt="Portraits of Existence — 16" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_18.jpeg" alt="Portraits of Existence — 17" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_19.jpeg" alt="Portraits of Existence — 18" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_20.jpeg" alt="Portraits of Existence — 19" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_21.jpeg" alt="Portraits of Existence — 20" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_22.jpeg" alt="Portraits of Existence — 21" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_23.jpeg" alt="Portraits of Existence — 22" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_24.jpeg" alt="Portraits of Existence — 23" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_25.jpeg" alt="Portraits of Existence — 24" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_26.jpeg" alt="Portraits of Existence — 25" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/feelings/hero_shekhe_27.jpeg" alt="Portraits of Existence — 26" loading="lazy" onclick="openFullSize(this)" /></figure>
+        </div>
+      </article>
+
+      <article class="collection" id="jin-jiyan-azadi">
+        <header class="collection-head">
+          <p class="collection-index">V</p>
+          <h3>Jin, Jiyan, Azadî</h3>
+          <p class="collection-text">
+            After the death of Zhina Amini at the hands of the Islamic Republic, my work was profoundly shaped by
+            this tragedy. Women's freedom has become a more prominent theme in my art. The protests and their
+            aftermath have moved me to make paintings that answer the situation, and the ongoing struggle for
+            women's rights.
+          </p>
+        </header>
+        <div class="gallery">
+          <figure><img src="./assets/zhina/hero_shekhe_01.jpeg" alt="Jin, Jiyan, Azadî — 1" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/zhina/hero_shekhe_02.jpeg" alt="Jin, Jiyan, Azadî — 2" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/zhina/hero_shekhe_03.jpeg" alt="Jin, Jiyan, Azadî — 3" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/zhina/hero_shekhe_04.jpeg" alt="Jin, Jiyan, Azadî — 4" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/zhina/hero_shekhe_05.jpeg" alt="Jin, Jiyan, Azadî — 5" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/zhina/hero_shekhe_06.jpeg" alt="Jin, Jiyan, Azadî — 6" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/zhina/hero_shekhe_07.jpeg" alt="Jin, Jiyan, Azadî — 7" loading="lazy" onclick="openFullSize(this)" /></figure>
+        </div>
+      </article>
+
+      <article class="collection" id="rebirth-through-motherhood">
+        <header class="collection-head">
+          <p class="collection-index">VI</p>
+          <h3>Rebirth Through Motherhood</h3>
+          <p class="collection-text">
+            The pain of leaving a fantastical childhood for the chaotic world of adulthood had always made me
+            doubt bringing an innocent human being into existence. Still, I made the selfish decision to know the
+            pure joy and love of motherhood. With my son's birth, the old me died and was reborn in the moment I
+            first held him. A fragile part of me has felt separated from my former self ever since — and these
+            paintings are my attempt to hold that ambivalence steady.
+          </p>
+        </header>
+        <div class="gallery">
+          <figure><img src="./assets/mother/hero_shekhe_03.jpeg" alt="Rebirth Through Motherhood — 1" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_04.jpeg" alt="Rebirth Through Motherhood — 2" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_05.jpeg" alt="Rebirth Through Motherhood — 3" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_06.jpeg" alt="Rebirth Through Motherhood — 4" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_07.jpeg" alt="Rebirth Through Motherhood — 5" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_08.jpeg" alt="Rebirth Through Motherhood — 6" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_09.jpeg" alt="Rebirth Through Motherhood — 7" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_10.jpeg" alt="Rebirth Through Motherhood — 8" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_11.jpeg" alt="Rebirth Through Motherhood — 9" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_12.jpeg" alt="Rebirth Through Motherhood — 10" loading="lazy" onclick="openFullSize(this)" /></figure>
+          <figure><img src="./assets/mother/hero_shekhe_13.jpeg" alt="Rebirth Through Motherhood — 11" loading="lazy" onclick="openFullSize(this)" /></figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <header class="section-head">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">The Artist</h2>
+      </header>
+      <div class="about-grid">
+        <figure class="about-portrait">
+          <img src="./assets/hero e1.jpg" alt="Portrait of Hero Shekhe" loading="lazy" />
+        </figure>
+        <div class="about-body">
+          <p>
+            Born in 1991 in East Kurdistan (Iran), Hero Shekhe emerged from a rich cultural tapestry woven with
+            the threads of literature and storytelling. Growing up in a nation with a storied legacy of women's
+            resistance and struggle for freedom and gender equality, her art is deeply reflective of her societal
+            experience and personal journey.
+          </p>
+          <p>
+            From a young age, Shekhe displayed a vivid imagination, nurtured by a home filled with books and
+            narratives that shaped her worldview. Her teenage years were marked by a critical awareness of the
+            conditions women faced in her society — an awareness that evolved into a passionate critique. She
+            found her voice through painting, a medium she believes is most suited to express her concerns and
+            aspirations in a peaceful yet powerful way.
+          </p>
+          <p>
+            Her paintings are not just expressions of personal introspection but a platform to question the
+            pervasive violence against women and to raise awareness about their rights.
+          </p>
+          <dl class="facts">
+            <div>
+              <dt>Practice</dt>
+              <dd>10+ years in the arts</dd>
+            </div>
+            <div>
+              <dt>Education</dt>
+              <dd>BA &amp; MA, Fine Arts in Painting</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Kurdistan</dd>
+            </div>
+          </dl>
         </div>
       </div>
-    </div>
-    <img alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" src="./assets/arrow.png" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Group exhibitions</h2>
-          <div class="article-container">
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Existence</h3>
-                <p>2023</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>A Space For Hope”</h3>
-                <p>2021</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Kurdistan Modern Artists</h3>
-                <p>2018</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>First Plastic Arts Festival of Kurdistan Women</h3>
-                <p>2018</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>13 Artists Exhibition</h3>
-                <p>2017</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Group Exhibition of 6 Female Artists</h3>
-                <p>2017</p>
-              </div>
-            </article>
-          </div>
+    </section>
+
+    <!-- EXHIBITIONS -->
+    <section id="exhibitions" class="exhibitions">
+      <header class="section-head">
+        <p class="eyebrow">CV</p>
+        <h2 class="section-title">Exhibitions</h2>
+      </header>
+      <div class="exhibitions-grid">
+        <div class="exhibitions-col">
+          <h3>Solo</h3>
+          <ul class="cv-list">
+            <li><span class="year">2023</span><span class="entry">Healan Art Exhibition — <em>Motherhood</em></span></li>
+            <li><span class="year">2021</span><span class="entry">Healan Art Exhibition — <em>Their Struggle</em></span></li>
+            <li><span class="year">2014</span><span class="entry">Shanidar Gallery — <em>Inner Turmoil</em></span></li>
+            <li><span class="year">2013</span><span class="entry">Shanidar Gallery — <em>Portraits of Existence</em></span></li>
+          </ul>
         </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Solo Exhibitions</h2>
-          <div class="article-container">
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Healan Art Exhibition</h3>
-                <p>Motherhood</p>
-                <p>2023</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Healan Art exhibition</h3>
-                <p>Their Struggle</p>
-                <p>2021</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Shanidar Gallery</h3>
-                <p>Inner Turmoil</p>
-                <p>2014</p>
-              </div>
-            </article>
-            <article>
-              <img alt="Experience icon" class="icon" src="./assets/checkmark.png" />
-              <div>
-                <h3>Shanidar Gallery</h3>
-                <p>Portraits of Existence</p>
-                <p>2013</p>
-              </div>
-            </article>
-          </div>
+        <div class="exhibitions-col">
+          <h3>Group</h3>
+          <ul class="cv-list">
+            <li><span class="year">2023</span><span class="entry">Existence</span></li>
+            <li><span class="year">2021</span><span class="entry">A Space For Hope</span></li>
+            <li><span class="year">2018</span><span class="entry">Kurdistan Modern Artists</span></li>
+            <li><span class="year">2018</span><span class="entry">First Plastic Arts Festival of Kurdistan Women</span></li>
+            <li><span class="year">2017</span><span class="entry">13 Artists Exhibition</span></li>
+            <li><span class="year">2017</span><span class="entry">Group Exhibition of 6 Female Artists</span></li>
+          </ul>
         </div>
       </div>
-    </div>
-    <img alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" src="./assets/arrow.png" />
-    <br />
-    <br />
-    <br />
-  </section>
+    </section>
 
-  <section id="new-section">
-    <h2 class="section__text__p1">Collections</h2>
-    <h1 style="text-transform:uppercase" class="title">Personal Journey</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div>
-          <p>After graduating from the College of Fine Arts, I sought to convey myself more freely. As a young woman
-            dissatisfied with my living conditions and society's attitude towards women, I aimed to express my
-            frustration with the injustices of life and people. Ignoring all academic rules and regulations, I focused
-            solely on expressing what was in my heart.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 1" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_01.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 2" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_02.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 3" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_03.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 4" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_04.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 5" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_05.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_06.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 7" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_07.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 8" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_08.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 9" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_09.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 10" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_10.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 11" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_11.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 12" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_12.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 13" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_13.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 14" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_14.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 16" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_16.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 17" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_17.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 18" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_18.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_19.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./photo/hero_shekhe_20.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-
-
-
-  <section id="new-section">
-    <h1 style="text-transform:uppercase" class="title">Their Struggle</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div>
-          <p>There is a shelter in different cities of the Kurdistan region that protects women threatened by their
-            families. In 2018, I asked the shelter's administration for permission to stay with the women living there.
-            I wanted to learn more about their suffering and collaborate with them on a series of paintings that might
-            help heal some of their wounds. Unfortunately, I was not granted permission. A year later, I decided to
-            create the paintings myself. In this series, I tried to convey the pain these women experienced.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 1" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_01.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 2" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_02.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 3" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_03.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 4" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_04.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 5" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_05.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_06.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 7" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_07.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 8" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_08.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 9" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_09.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 10" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_10.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 11" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_11.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 12" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_12.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 13" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_13.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 14" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_14.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 16" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/shelter_in_kurdistan\hero_shekhe_16.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-
-
-
-
-
-
-  <section id="new-section">
-    <h1 style="text-transform:uppercase" class="title">My Mother's Hewrî</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div>
-          <p>These paintings explore the feelings and identity of women, particularly Kurdish women. They are called "My
-            Mother's Hewrî," named after the traditional dress worn by Kurdish women. The inspiration for these
-            paintings came from my desire to honor my mother, who has always supported and encouraged me to be myself
-            and pursue my passion. Like much of my earlier work, these paintings focus on women and their reflections on
-            self and life.
-
-            I chose Hewrî as the central theme because it is deeply connected to the lives of my mother and most Kurdish
-            women. Many of my childhood memories feature my mother wearing this dress. After a few years, her dress
-            became worn, and she wanted to discard it, but I saved it and incorporated it into my figures in the
-            paintings.
-
-            In my view, anything that remains with someone for a long time becomes part of that person, carrying a piece
-            of their soul and existence. It witnesses both the good and bad moments, sharing in their feelings
-            throughout the time it is with them. When I look at these paintings, I imagine the emotions and experiences
-            my mother had while wearing this dress.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 1" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_01.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 2" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_02.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 3" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_03.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 4" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_04.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 5" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_05.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_06.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 7" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_07.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 8" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/hawry/hero_shekhe_08.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-
-
-
-  <section id="new-section">
-    <h1 style="text-transform:uppercase" class="title">Portraits of Existence</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div>
-          <p>My works attempt to depict my personal experiences, and at this stage, I am focused on examining my
-            identity and personality. I believe they are existential, as this approach emphasizes self-analysis and
-            self-knowledge within a complex and often inscrutable worldview. In these works , the main themes include
-            fear, anxiety, alienation, inheritance, the meaninglessness of life, the emptiness within human existence,
-            and the individual's position in the world.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 1" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_01.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 2" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_02.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 3" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_03.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 4" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_04.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 5" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_05.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_06.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 7" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_07.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 8" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_08.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 9" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_09.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 10" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_10.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 11" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_11.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 12" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_12.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 13" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_13.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 14" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_14.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 16" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_16.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 17" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_17.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 18" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_18.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_19.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_20.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_21.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_22.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_23.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_24.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_25.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_26.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/feelings/hero_shekhe_27.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-  
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-
-  <section id="new-section">
-    <h1 style="text-transform:uppercase" class="title">Jin, Jiyan, Azadî</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div>
-          <p>After the death of Zhina Amini at the hands of the Islamic Republic, my work was profoundly influenced by
-            this tragic event. Women's freedom has become a more prominent theme in my art. The protests and their
-            aftermath inspired me to create paintings that reflect the situation and the ongoing struggle for women's
-            rights.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 1" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_01.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 2" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_02.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 3" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_03.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 4" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_04.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 5" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_05.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_06.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/zhina/hero_shekhe_07.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-
-
-  <section id="new-section">
-    <h1 style="text-transform:uppercase" class="title">Rebirth Through Motherhood</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div>
-          <p>The pain of transitioning from a fantastical childhood world to the chaotic world of adulthood had always
-            made me doubt bringing an innocent human being into existence. Nevertheless, I made the selfish decision to
-            experience the pure joy and love of motherhood. With the birth of my son, the old me died and was reborn the
-            moment I held my child for the first time. Since then, a fragile part of me has felt separated from my
-            former self.
-
-            Self-reflective questions about my identity as an independent person and as a mother have deepened. Did I
-            make the right decision? How will he face life? What if he blames me for bringing him into this world? These
-            thoughts dominate every second of my life, leading me to believe that expressing them through art might help
-            me cope with the ambivalent feelings of being a new parent.</p>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 3" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_03.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 4" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_04.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 5" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_05.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 6" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_06.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 7" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_07.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 8" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_08.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 9" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_09.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 10" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_10.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 11" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_11.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 12" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_12.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img alt="Project 19" class="project-img" onclick="openFullSize(this.src)"
-              src="./assets/mother/hero_shekhe_13.jpeg" />
-          </div>
-          <div class="btn-container"></div>
-        </div>
-
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img alt="Email icon" class="icon contact-icon email-icon" src="./assets/email.png" />
-        <p><a href="mailto:heroshekhe6@gmail.com">heroshekhe6@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img alt="LinkedIn icon" class="icon contact-icon" src="./assets/insta2.png" />
-        <p><a href="https://www.instagram.com/heroshekhe?igsh=MWp5ejVkNmZ2NHdsNA==">heroshekhe</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <header class="section-head">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="section-title">Contact</h2>
+      </header>
+      <div class="contact-body">
+        <p class="contact-lede">
+          For exhibitions, commissions, press, or to say hello —
+        </p>
+        <ul class="contact-links">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:heroshekhe6@gmail.com">heroshekhe6@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Instagram</span>
+            <a href="https://www.instagram.com/heroshekhe" target="_blank" rel="noopener">@heroshekhe</a>
+          </li>
         </ul>
       </div>
-    </nav>
-    <p>Copyright © 2024 Hero Shekhe. All Rights Reserved.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand">Hero Shekhe</p>
+    <p class="footer-meta">
+      © <span id="year">2026</span> Hero Shekhe. All rights reserved.
+    </p>
   </footer>
-  <script src="script.js"></script>
-  <!-- Full-size image overlay -->
-  <div class="overlay" id="fullSizeImageOverlay" onclick="closeFullSize()">
-    <span class="close">×</span>
-    <img class="overlay-content" id="fullSizeImage" />
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close" onclick="closeFullSize()">×</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous" onclick="navLightbox(-1)">‹</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next" onclick="navLightbox(1)">›</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" alt="" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
